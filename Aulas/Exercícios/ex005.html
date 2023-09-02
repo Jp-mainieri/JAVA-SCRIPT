@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005 - Primeiros passos com o DOM</title>
+
+    <style>
+        body {
+            background-color:cornflowerblue;
+            color: white;
+            font: normal 16pt Arial;
+        }
+        body a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Começando com o DOM</h1>
+
+    <p> Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg"><a href="#">Clique em mim</a></div>
+
+    <script>
+        var corpo = document.getElementsByTagName('body')
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = document.querySelector('div#msg')
+
+        window.document.writeln("O paragrafo selecionado foi o " + p1.innerText)
+        p1.style.color = 'blue'
+        document.writeln(d.innerHTML)
+        d.style.background = 'blue'
+    
+
+
+    </script>
+
+</body>
+</html>

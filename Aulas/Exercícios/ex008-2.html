@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigraçao</title>
+    <style>
+        main {
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        main input {
+            width: 100px;
+            margin: auto;
+        }   
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sistema de Identificaçao de Imigraçao (SII)</h1>
+        Insira o país de nascimento: <input type="text" name="txtcountry1" id="txtcountry1">
+        Insira o país de destino: <input type="text" name="txtcontry2" id="txtcountry2">
+        <input type="button" value="verificar" onclick="verify()">
+        <div id="res">
+
+        </div>
+    </main>
+    <script>
+        function verify() {
+            var tc1 = document.querySelector('input#txtcountry1')
+            var tc2 = document.querySelector('input#txtcountry2')
+
+            var res = document.querySelector('div#res')
+
+            if (tc1 == tc2) {
+                res.innerHTML = `<p> Você chegou ao seu pais de origem, <strong>seja bem vindo!</strong></p>`
+            }else {
+                res.innerHTML = `<p>Você é Imigrante, você nasceu em ${tc1} e esta chegando em ${tc2}.</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
