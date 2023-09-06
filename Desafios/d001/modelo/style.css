@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin:  0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: rgb(234, 194, 154);
+    padding: 50px;
+}
+
+main {
+    background-color: white;
+    width: 30vw;
+    height: 40vh;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(22, 7, 39);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.319);
+    border-radius: 7px;
+}
+header {
+    text-align: center;
+    color: rgb(22, 7, 39);
+    margin: 10px 0px 30px;
+    font-size: 2em;
+}
+
+.img-agora {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 40px auto;
+    background-position: right center;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
