@@ -16,10 +16,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 
     background-color: white;
     width: 30vw;
-    height: 20vw;
 
     margin: auto;
     padding: 20px;
@@ -47,5 +48,26 @@ footer {
 
 .input {
     display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.input p {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 80px;
+    height: 20px;
+}
+
+select {
+    width: 200px;
+}
+
+#analiseTxt {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
